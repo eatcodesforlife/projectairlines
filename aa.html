@@ -15,8 +15,8 @@
     <div id="page-wrapper">
       <header id="header">
         <h1 class="header-title"><a href="index.html">Airline Cabin</a></h1>
-        <nav role="">
-          <ul id="carrier-list-by-continent">
+        <nav role="navigation">
+          <ul id="airline-list-by-continent">
             <li class="continent-name">
               N. American
               <ul class="carrierList">
@@ -61,8 +61,9 @@
                   <a href="#">All Nippon Airways(ANA)</a>
                 </li>
                 <li class="carriers" id="cx"><a href="#">Cathay Pacific</a></li>
-                <li class="carriers" id="ca"><a href="#">China Airlines</a></li>
-                <li class="carriers" id="ac"><a href="#">Air China</a></li>
+                <li class="carriers" id="ci"><a href="#">China Airlines</a></li>
+                <li class="carriers" id="mu"><a href="#">China Eastern</a></li>
+                <li class="carriers" id="ca"><a href="#">Air China</a></li>
                 <li class="carriers" id="jl"><a href="#">Japan Airlines</a></li>
                 <li class="carriers" id="oz">
                   <a href="#">Asiana Airlines</a>
@@ -123,7 +124,30 @@
           </ul>
         </nav>
       </header>
-      <div id="main"></div>
+      <div id="main">
+        <div class="main-container">
+          <div class="sub-menu">
+            <ul class="tabs">
+              <li class="tab active" id="t1">Business Class</li>
+              <li class="tab" id="t2">First Class</li>
+            </ul>
+          </div>
+          <div class="gallery-container">
+            <div class="business-class-gallery gallery active" id="c1">
+              <img src="imgs/aa-biz-Image-WESSCO.jpg" />
+              <img src="imgs/aa-business-class-flatbed.jpg" />
+              <img src="imgs/aa-flat-bed.jpg" />
+              <img src="imgs/aa-biz121.jpg" />
+            </div>
+
+            <div class="first-class-gallery gallery" id="c2">
+              <img src="imgs/aa-suite1.jpg" alt="" />
+              <img src="imgs/aa-suite2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="scripts/tabs.js"></script>
   </body>
 </html>
