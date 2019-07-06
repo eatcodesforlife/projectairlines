@@ -131,7 +131,6 @@ ul li ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease-out;
   width: 100%;
   font-weight: bold;
   border: 1px solid #ff4500;
