@@ -165,3 +165,36 @@ ul li> a {
   height: 50px;
   margin-bottom: 8px;
 }
+
+/* slideshow */
+
+.slide-container {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+/* prev and next */
+
+.prev, .next  {
+  cursor: pointer;
+  position: absolute;
+  top: 140px;
+  width: auto;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
