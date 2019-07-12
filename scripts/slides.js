@@ -1,7 +1,11 @@
 let businessClassSlide = document.querySelectorAll(".business-class-slide"),
   firstClassSlide = document.querySelectorAll(".first-class-slide"),
-  arrowLeft = document.querySelectorAll(".prev"),
-  arrowRight = document.querySelectorAll(".next"),
+  arrowLeftBusinessClass = document.querySelector(
+    "#prev-button-business-class"
+  ),
+  arrowRightBusinessClass = document.querySelector(
+    "#next-button-bussiness-class"
+  ),
   current = 0;
 
 //   reset: clear all images
@@ -17,6 +21,28 @@ function startSlide() {
   firstClassSlide[0].style.display = "block";
 }
 
-// arrow left
+// business class buttons left
+arrowLeftBusinessClass.addEventListener("click", previousBusinessClass);
+arrowRightBusinessClass.addEventListener("click", nextBusinessclass);
 
-arrowLeft.addEventListener("click", previous);
+function previousBusinessClass(e) {
+  clearImages();
+
+  if (current === 0) {
+    current = businessClassSlide.length;
+  }
+  businessClassSlide[current - 1].style.display = "block";
+  current--;
+}
+
+function nextBusinessclass(e) {
+  clearImages();
+
+  if (current === businessClassSlide.length - 1) {
+    current = 0;
+  }
+  businessClassSlide[current + 1].style.display = "block";
+  current++;
+}
+
+startSlide();
