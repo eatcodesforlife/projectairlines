@@ -45,13 +45,10 @@ header {
 .header-title {
   margin: 0;
   padding: 2rem;
- 
 }
-.header-title>a {
+.header-title > a {
   color: #055cdf;
 }
-
-
 
 #airline-list-by-continent {
   display: flex;
@@ -59,8 +56,8 @@ header {
   align-items: baseline;
   position: relative;
   padding-right: 5em;
-  background:  #363535;
-  color: #fff
+  background: #363535;
+  color: #fff;
 }
 
 /* creating the drop down */
@@ -95,7 +92,7 @@ ul li ul li {
   padding: 0 0.2rem 1rem 0.2rem;
   width: 100%;
 }
-ul li> a {
+ul li > a {
   color: #fff;
   width: auto;
 }
@@ -104,8 +101,6 @@ ul li> a {
   text-align: center;
   padding: 0.5em;
 }
-
-
 
 /* main */
 
@@ -176,7 +171,8 @@ ul li> a {
 
 /* prev and next */
 
-.prev, .next  {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 140px;
@@ -188,8 +184,9 @@ ul li> a {
   border-radius: 0 3px 3px 0;
 }
 
-.prev:hover, .next:hover {
-  background: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
