@@ -1,0 +1,35 @@
+#covid-quicklinks-section {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 25px 0;
+}
+
+#covid-quicklinks-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  ul {
+    width: 450px;
+    padding: 15px 0;
+    li {
+      text-align: left;
+      font-size: 1.25rem;
+      color: #055cdf;
+      padding: 2.5px 0;
+      &:hover {
+        background: none;
+      }
+      a {
+        text-decoration: none;
+        color: #055cdf;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
